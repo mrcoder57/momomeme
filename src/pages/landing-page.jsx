@@ -7,10 +7,12 @@ import Tokenomics from "../components/tokenomics";
 import Momomap from "../components/momomap";
 import Getmemo from "../components/getmemo";
 import Footer from "../components/footer";
+import { BrowserRouter } from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <div className="bg-[#FF90E8] h-full py-2 overflow-x-hidden">
+    <BrowserRouter>
+    <div className="bg-[#FF90E8] h-full overflow-x-hidden">
       <div className="bg-[#FF90E8] h-full">
         <Navbar />
       </div>
@@ -24,6 +26,7 @@ const LandingPage = () => {
      <Getmemo/>
      <Footer/>
     </div>
+    </BrowserRouter>
   );
 };
 

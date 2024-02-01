@@ -2,12 +2,12 @@ import React from "react";
 import top from "../assets/topbotton.png";
 import about from "../assets/aboutmomo.png";
 import momo from "../assets/momoo.png";
-import bottom from "../assets/bottom.png";
+
 
 const Aboutmomo = () => {
   return (
     <div className=" flex flex-col bg-white">
-      <div className=" h-full w-full lg:mt-[-120px]">
+      <div className=" h-full w-full lg:mt-[-120px] mt-[-100px] mb-[100px]">
         <img src={top} alt="top" />
       </div>
       <div className=" flex lg:h-[350px] lg:w-[1000px] w-[350px] items-center justify-center mx-auto mt-5">
@@ -27,9 +27,7 @@ const Aboutmomo = () => {
           touch of humor and a whole lot of heart.
         </p>
       </div>
-      <div className=" h-full w-full lg:mb-[-120px]">
-        <img src={bottom} alt="top" />
-      </div>
+     
     </div>
   );
 };

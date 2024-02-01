@@ -1,11 +1,19 @@
 import React from "react";
 import { cardData } from "../constants";
 import Cards from "./cards";
-import dialog from "../assets/Dialog.png"
+import dialog from "../assets/Dialog.png";
 import momo from "../assets/momoo.png";
+import r from "../assets/R.png";
+import Last from "../assets/last.png";
+import sol from "../assets/solscan.png";
+import ghost from "../assets/ghost.png";
+import bottom from "../assets/bottom.png";
 const Howtobuy = () => {
   return (
-    <div className=" flex flex-col mx-12 mt-[250px] ">
+    <div className=" flex flex-col  ">
+      <div className=" h-full w-full   mb-[100px]">
+        <img src={bottom} alt="top" />
+      </div>
       <div className=" flex flex-col ">
         <div>
           <h1 className=" text-6xl first-letter:capitalize font-bold lg:ml-[100px]">
@@ -20,17 +28,23 @@ const Howtobuy = () => {
             Ready to own some Momo tokens? Follow these straightforward steps to
             purchase your Momo tokens and join the Momo community
           </p>
+          <hr className=" border border-black" />
+
         </div>
-        <div className=" grid grid-cols-1 lg:grid-cols-4 mt-32">
-          <Cards image={"image"} bgcolor={"#23A094"} margintop={50} />
-          <Cards image={"image"} bgcolor={"#FFC900"} margintop={40} />
-          <Cards image={"image"} bgcolor={"#F1F333"} margintop={30} />
-          <Cards image={"image"} bgcolor={""} margintop={10} />
+
+        <div className="grid grid-cols-1 lg:grid-cols-5 mt-32 gap-4 lg:ml-20">
+          <Cards image={ghost} bgcolor={"#23A094"} margintop={40} />
+          <Cards image={sol} bgcolor={"#FFC900"} margintop={20} />
+          <Cards image={r} bgcolor={"#F1F333"} margintop={0} />
+          <Cards image={Last} bgcolor={""} margintop={-20} />
         </div>
-        <div
-          className=" grid grid-cols-1 lg:grid-cols-2 mb-28"
-        >
-          <img src={momo} alt=""  className=" h-[400px] w-[400px] scale-x-[-1]"/>
+
+        <div className=" grid grid-cols-1 lg:grid-cols-2 mb-28">
+          <img
+            src={momo}
+            alt=""
+            className=" h-[400px] w-[400px] scale-x-[-1]"
+          />
           <img src={dialog} alt="" className=" h-[400px] w-[400px]" />
         </div>
       </div>

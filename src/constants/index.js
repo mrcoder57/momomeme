@@ -1,3 +1,12 @@
+import twitter from "../assets/twitter.svg"
+import telegram from "../assets/send.svg"
+import icon3 from "../assets/icon3.svg"
+import icon4 from "../assets/icon4.svg"
+import icon5 from "../assets/icon5.svg"
+
+
+
+
 export const navlinks = [
   { name: "home", link: "#" },
   { name: "about", link: "#" },
@@ -8,11 +17,11 @@ export const navlinks = [
 ];
 
 export const socials=[
-    { name:"twitter", Image:"iamge"},
-    { name:"twitter", Image:"iamge"},
-    { name:"twitter", Image:"iamge"},
-    { name:"twitter", Image:"iamge"},
-    { name:"twitter", Image:"iamge"},
+    { name:"twitter", Image:twitter},
+    { name:"twitter", Image:telegram},
+    { name:"twitter", Image:icon3},
+    { name:"twitter", Image:icon4},
+    { name:"twitter", Image:icon5},
 ]
 export const cardData = [
     {

@@ -19,8 +19,8 @@ const Getmemo = () => {
         <div className=" flex flex-row gap-3">
           {socials.map((social) => (
             
-            <div className=" h-10 w-10 bg-white rounded-full p-2 mt-5 border-black border-r-[3.5px] border-b-[3.5px]">
-              <img src="" alt="" />
+            <div className=" h-14 w-14 bg-white rounded-full p-2 mt-5 border-black border-r-[3.5px] border-b-[3.5px]">
+              <img src={social.Image} alt="" />
             </div>
           ))}
           </div>
