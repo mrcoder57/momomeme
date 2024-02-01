@@ -2,14 +2,14 @@ import React from "react";
 import { socials,navlinks } from "../constants";
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4 mt-20">
-      <div className="container mx-auto flex flex-col items-center justify-center lg:flex-row lg:justify-between">
+    <footer className="bg-gray-800 text-white p-4 mt-20 overflow-x-hidden">
+      <div className="container mx-auto flex flex-col items-center justify-center lg:flex-row lg:justify-between overflow-x-hidden">
         <div className="mb-4 lg:mb-0">
           <p className="text-lg font-bold">MOMO</p>
         </div>
         <div className="flex flex-col items-center lg:flex-row lg:items-end">
           <div className="mb-2 lg:mb-0 lg:mr-8">
-          <ul className="">
+          <ul className=" capitalize">
               {navlinks.map((link, index) => (
                <li> <a
                   key={index}

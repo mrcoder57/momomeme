@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 
 const LandingPage = () => {
   return (
-    <div className="bg-[#FF90E8] h-full py-2">
+    <div className="bg-[#FF90E8] h-full py-2 overflow-x-hidden">
       <div className="bg-[#FF90E8] h-full">
         <Navbar />
       </div>
