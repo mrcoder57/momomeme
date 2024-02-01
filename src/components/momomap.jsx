@@ -1,0 +1,43 @@
+import React from "react";
+import Cards from "./mapcard";
+import map from "../assets/List.png"
+import top from "../assets/ybottom.png";
+const Momomap = () => {
+  return (
+    <div className="h-full bg-[#FFC900] ">
+    
+      <div className=""> 
+        <div className="flex flex-col">
+          <div className=" mt-36">
+            <h1 className="text-6xl first-letter:capitalize font-bold lg:ml-[100px]">
+              MEMO
+            </h1>
+          </div>
+          <div className="flex lg:flex-row flex-col w-full">
+            <h1 className="text-5xl first-letter:capitalize lg:ml-[200px] font-bold">
+              MAP
+            </h1>
+            <p className="text-sm ml-10 mt-6">
+              Ready to own some Momo tokens? Follow these straightforward steps
+              to purchase your Momo tokens and join the Momo community
+            </p>
+          </div>
+          <div className=" mx-10 lg:mx-20 h-full lg:w-[990px] w-[300px] mt-16">
+            <img src={map} alt="" />
+          </div>
+          <div className="lg:mx-36 mx-5 grid grid-cols-1 lg:grid-cols-5 mb-20">
+            <Cards phase={1} bgcolor={"#23A094"} />
+            <Cards phase={2} bgcolor={"#FF7051"} />
+            <Cards phase={3} bgcolor={"#F1F333"} />
+            <Cards phase={4} bgcolor={"#FF90E8"} />
+          </div>
+        </div>
+      </div>
+      <div className=" h-full w-full mt-[120px]">
+        <img src={top} alt="top"  className=" scale-x-[-1]"/>
+      </div>
+    </div>
+  );
+};
+
+export default Momomap;

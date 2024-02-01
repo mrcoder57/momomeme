@@ -23,7 +23,7 @@ const Navbar = () => {
             <img src={menu} alt="menu" className="h-5 w-5 flex" />
           </button>
           {isMobileMenuOpen && (
-            <ul className="absolute border shadow-md rounded-lg p-4 w-40 bg-white gap-2">
+            <ul className="absolute border shadow-md rounded-lg p-4 w-40 bg-[#FF90E8] gap-2">
               {navlinks.map((link, index) => (
                <li> <a
                   key={index}

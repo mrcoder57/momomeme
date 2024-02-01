@@ -28,7 +28,7 @@ const Howtobuy = () => {
           <Cards image={"image"} bgcolor={""} margintop={10} />
         </div>
         <div
-          className=" grid grid-cols-1 lg:grid-cols-2"
+          className=" grid grid-cols-1 lg:grid-cols-2 mb-28"
         >
           <img src={momo} alt=""  className=" h-[400px] w-[400px] scale-x-[-1]"/>
           <img src={dialog} alt="" className=" h-[400px] w-[400px]" />

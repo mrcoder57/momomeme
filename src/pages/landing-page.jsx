@@ -3,6 +3,10 @@ import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import Aboutmomo from "../components/about-momo";
 import Howtobuy from "../components/how-to-buy";
+import Tokenomics from "../components/tokenomics";
+import Momomap from "../components/momomap";
+import Getmemo from "../components/getmemo";
+import Footer from "../components/footer";
 
 const LandingPage = () => {
   return (
@@ -13,7 +17,12 @@ const LandingPage = () => {
       <Hero />
       <Aboutmomo/>
       <Howtobuy/>
-     
+      <Tokenomics/>
+     <div className="h-full w-full">
+        <Momomap/>
+     </div>
+     <Getmemo/>
+     <Footer/>
     </div>
   );
 };

@@ -37,3 +37,10 @@ export const cardData = [
       },
    
   ];
+  export const tags=[
+    {name:"Early Investors", color:"green"},
+    {name:"Liquidity", color:"red"},
+    {name:"Marketing", color:"green"},
+    {name:"Airdrop", color:"blue"},
+    {name:"Teams Token", color:"red"},
+  ]
