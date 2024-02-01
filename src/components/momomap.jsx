@@ -1,11 +1,14 @@
 import React from "react";
 import Cards from "./mapcard";
 import map from "../assets/List.png"
+import bottom from "../assets/bottom.png";
 import top from "../assets/ybottom.png";
 const Momomap = () => {
   return (
     <div className="h-full bg-[#FFC900] ">
-    
+     <div className=" h-full w-full lg:mt-[-150px] mt-[-10px]">
+        <img src={bottom} alt="top" />
+      </div>
       <div className=""> 
         <div className="flex flex-col">
           <div className=" mt-36">
@@ -33,9 +36,9 @@ const Momomap = () => {
           </div>
         </div>
       </div>
-      <div className=" h-full w-full mt-[120px]">
+      {/* <div className=" h-full w-full lg:mt-[120px] mt-[250px]">
         <img src={top} alt="top"  className=" scale-x-[-1]"/>
-      </div>
+      </div> */}
     </div>
   );
 };

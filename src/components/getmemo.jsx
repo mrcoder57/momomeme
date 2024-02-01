@@ -1,18 +1,21 @@
 import React from "react";
 import { socials } from "../constants";
-
+import top from "../assets/ybottom.png";
 const Getmemo = () => {
   return (
-    <div className="flex mt-[-100px] bg-[#FF90E8]">
-      <div className=" flex flex-col items-center justify-center mx-auto">
-        <h1 className=" mt-44 text-6xl font-bold text-center w-full">
+    <div className="flex flex-col h-full w-full bg-[#FF90E8]">
+      <div className=" h-full w-screen   mb-[100px]">
+        <img src={top} alt="top" />
+      </div>
+      <div className=" flex flex-col items-center justify-center ">
+        <h1 className=" mt-32 text-6xl font-bold text-center w-full">
           Missed $PEPE 
         </h1>
         <h1 className="mt-4 text-6xl font-bold text-center w-full">
            Get MOMO
         </h1>
         <div className=" flex flex-col items-center justify-center mx-auto mt-20">
-        <button className=" lg:h-24 h-18 lg:w-[600px] w-[300px] rounded-full bg-yellow-400 text-center text-2xl ">
+        <button className=" lg:h-24 h-18 lg:w-[600px] w-[300px] rounded-full border-black border-r-[5.5px] border-b-[6.5px]  shadow-lg bg-yellow-400 text-center text-2xl ">
             Get Momo
         </button>
         </div>

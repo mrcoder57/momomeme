@@ -39,13 +39,13 @@ const Howtobuy = () => {
           <Cards image={Last} bgcolor={""} margintop={-20} />
         </div>
 
-        <div className=" grid grid-cols-1 lg:grid-cols-2 mb-28">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 mb-28 mt-16">
           <img
             src={momo}
             alt=""
-            className=" h-[400px] w-[400px] scale-x-[-1]"
+            className=" h-[400px] lg:h-[600px]  lg:w-[600px] w-[400px] scale-x-[-1]"
           />
-          <img src={dialog} alt="" className=" h-[400px] w-[400px]" />
+          <img src={dialog} alt="" className=" h-[400px] w-[400px] lg:h-[600px]  lg:w-[600px]" />
         </div>
       </div>
     </div>

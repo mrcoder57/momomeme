@@ -7,7 +7,7 @@ import momo from "../assets/momoo.png";
 const Aboutmomo = () => {
   return (
     <div className=" flex flex-col bg-white">
-      <div className=" h-full w-full lg:mt-[-120px] mt-[-100px] mb-[100px]">
+      <div className=" h-full w-full lg:mt-[-120px] mt-[-50px] mb-[100px]">
         <img src={top} alt="top" />
       </div>
       <div className=" flex lg:h-[350px] lg:w-[1000px] w-[350px] items-center justify-center mx-auto mt-5">

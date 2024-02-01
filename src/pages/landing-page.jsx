@@ -23,7 +23,10 @@ const LandingPage = () => {
      <div className="h-full w-full">
         <Momomap/>
      </div>
+     <div className="h-full w-full">
      <Getmemo/>
+     </div>
+    
      <Footer/>
     </div>
     </BrowserRouter>
