@@ -47,9 +47,9 @@ export const cardData = [
    
   ];
   export const tags=[
-    {name:"Early Investors", color:"green"},
-    {name:"Liquidity", color:"red"},
-    {name:"Marketing", color:"green"},
-    {name:"Airdrop", color:"blue"},
-    {name:"Teams Token", color:"red"},
+    {name:"Early Investors", color:"green",percent:25},
+    {name:"Liquidity", color:"red",percent:20},
+    {name:"Marketing", color:"green",percent:25},
+    {name:"Airdrop", color:"blue",percent:20},
+    {name:"Teams Token", color:"red",percent:10},
   ]

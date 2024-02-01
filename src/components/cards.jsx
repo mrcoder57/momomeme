@@ -1,7 +1,7 @@
 const Cards = ({ image, bgcolor, margintop }) => {
     return (
        <div
-         className={`flex flex-col bg-${bgcolor} h-[400px] lg:w-[268px] w-[250px] items-center justify-center border-2 border-black rounded-xl ml-4 mt-[${margintop}]`}
+         className={`flex flex-col bg-${bgcolor} h-[400px] lg:w-[270px] w-[250px] items-center justify-center border-2 border-black rounded-xl ml-4 mt-[${margintop}]`}
          style={{ marginTop: margintop,backgroundColor:bgcolor }}
        >
          <div className="flex flex-col p-2">

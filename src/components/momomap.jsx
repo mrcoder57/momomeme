@@ -24,11 +24,13 @@ const Momomap = () => {
               Ready to own some Momo tokens? Follow these straightforward steps
               to purchase your Momo tokens and join the Momo community
             </p>
+           
           </div>
-          <div className=" mx-10 lg:mx-20 h-full lg:w-[990px] w-[300px] mt-16">
+          <hr className=" border border-black " />
+          <div className="mx-4 lg:mx-8 h-[120%] lg:w-[90%] w-screen mt-16">
             <img src={map} alt="" />
           </div>
-          <div className="lg:mx-36 mx-5 grid grid-cols-1 lg:grid-cols-5 mb-20">
+          <div className=" grid grid-cols-1 lg:grid-cols-5 mb-20 mx-auto lg:ml-24 gap-5">
             <Cards phase={1} bgcolor={"#23A094"} />
             <Cards phase={2} bgcolor={"#FF7051"} />
             <Cards phase={3} bgcolor={"#F1F333"} />

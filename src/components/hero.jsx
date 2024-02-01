@@ -13,12 +13,13 @@ const Hero = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:mx-28 mt-28 mb-20">
       <div className="flex flex-col ml-10">
-        <div className="flex items-center mt-14">
-          <img src={heading} alt="" className="h-16 w-20" />
+        <div className="flex items-center mt-14 ">
+          
           <h1 className="text-6xl font-bold ml-4 mt-2">$ MoMo</h1>
+          <img src={heading} alt="" className="h-16 w-20 mt-[-38px] " />
         </div>
-        <div className="mt-5">
-          <p className="text-xl">
+        <div className="mt-5  lg:w-full w-full ml-[-12px]">
+          <p className="text-xl ">
             Welcome to the Momo family, where fun meets finance! Momo is not
             just a meme; it's a movement, a community-driven token that brings
             people together in the world of decentralized finance. Buckle up and

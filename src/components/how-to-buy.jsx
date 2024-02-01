@@ -11,7 +11,7 @@ import bottom from "../assets/bottom.png";
 const Howtobuy = () => {
   return (
     <div className=" flex flex-col  ">
-      <div className=" h-full w-full   mb-[100px]">
+      <div className=" h-full w-full mt-[-10px]   mb-[100px]">
         <img src={bottom} alt="top" />
       </div>
       <div className=" flex flex-col ">
@@ -28,11 +28,11 @@ const Howtobuy = () => {
             Ready to own some Momo tokens? Follow these straightforward steps to
             purchase your Momo tokens and join the Momo community
           </p>
-          <hr className=" border border-black" />
+         
 
         </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-5 mt-32 gap-4 lg:ml-20">
+        <hr className=" border border-black " />
+        <div className="grid grid-cols-1 lg:grid-cols-5 mt-32 gap-4 lg:ml-20 mx-auto">
           <Cards image={ghost} bgcolor={"#23A094"} margintop={40} />
           <Cards image={sol} bgcolor={"#FFC900"} margintop={20} />
           <Cards image={r} bgcolor={"#F1F333"} margintop={0} />

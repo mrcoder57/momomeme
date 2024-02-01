@@ -22,13 +22,18 @@ const Tokenomics = () => {
           2,099,991,041,457.75
         </h2>
       </div>
-      <div className=" flex lg:flex-row flex-wrap-reverse items-center justify-center mt-10">
+      <div className=" flex lg:flex-row flex-wrap-reverse items-center justify-center mt-10 gap-3">
         {tags.map((tag) => (
-          <button className="bg-white flex-row h-8 w-32 rounded-full border-black border-b-[3.5px] border-r-[3.5px] mx-5 text-sm flex">
-          <div className={`h-5 w-5 bg-${tag.color}-500 rounded-full ml-2 flex flex-row w-full`}>
-             <span className="ml-5 "> {tag.name}</span>
+          <div className="bg-white flex-row h-8  rounded-full border-black border-b-[3.5px] border-l border-t border-r-[3.5px] mx-5 text-sm flex">
+          <button className="h-5 w-full  rounded-full ml-2 flex flex-row p-1"
+         
+          >
+            <span  style={{backgroundColor:tag.color}} className=" h-5 w-5 rounded-full"></span>
+             <span className="ml-2"> {tag.name}</span>
+             <span className="ml-2 font-semibold">- {tag.percent}%</span>
+             </button>
           </div>
-         </button>
+         
          
         ))}
       </div>

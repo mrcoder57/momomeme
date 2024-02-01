@@ -15,13 +15,13 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#FF90E8] fixed flex items-center justify-between mr-10 w-full">
-      <div className="flex items-center lg:ml-20 ml-3">
+      <div className="flex items-center lg:ml-10 ">
         <div className="lg:hidden mt-2">
           <button
             onClick={toggleMobileMenu}
             className="flex h-11 w-12 md:block"
           >
-            <img src={menu} alt="menu" className="h-5 w-5 flex" />
+            <img src={menu} alt="menu" className="h-10 w-10 ml-3 flex" />
           </button>
           {isMobileMenuOpen && (
             <ul className="absolute border shadow-md rounded-lg p-1 text-xs w-40 bg-[#FF90E8] gap-2 capitalize">
@@ -38,15 +38,16 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
+              
               <li><button className="bg-white h-14 w-36 rounded-full hover:border-white hover:bg-gray-800 hover:text-white capitalize border-r-[5px] border-b-[5px] border-black">
-          get memo
-        </button></li>
+                get memo
+              </button></li>
             </ul>
-            
+
           )}
         </div>
-        <img src={momo} alt="Logo" className="h-20 w-20" />
-        <span className="text-3xl font-bold ml-3 capitalize">WENWIFHAT</span>
+        <img src={momo} alt="Logo" className="lg:h-20 lg:w-20 h-14 w-14" />
+        <span className="lg:text-3xl text-xl font-bold ml-3 capitalize">WENWIFHAT</span>
       </div>
 
       <div className="hidden md:hidden lg:flex items-center space-x-4 border border-black rounded-full p-2">
@@ -61,7 +62,7 @@ const Navbar = () => {
         ))}
       </div>
 
-      <div className=" items-center space-x-4 hidden lg:flex">
+      <div className=" items-center space-x-4 hidden lg:flex mr-5">
         <button className=" rounded-full flex h-12 w-12 border hover:border-white border-black align-center justify-center ">
           <img
             src={send}
