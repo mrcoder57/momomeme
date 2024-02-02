@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import heading from "../assets/Heading 1.png";
 import momo from "../assets/momo.png";
 import { socials } from "../constants";
+import SectionWrapper from "../hoc/sectionwrappper";
 
 const Hero = () => {
   const socialIconsVariants = {
@@ -58,4 +59,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero,"hero");

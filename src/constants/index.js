@@ -8,12 +8,12 @@ import icon5 from "../assets/icon5.svg"
 
 
 export const navlinks = [
-  { name: "home", link: "#" },
-  { name: "about", link: "#" },
-  { name: "how to buy", link: "#" },
+  { name: "home", link: "#hero" },
+  { name: "about", link: "#about" },
+  { name: "how to buy", link: "#how" },
   { name: "bridge", link: "#" },
-  { name: "tokenomics", link: "#" },
-  { name: "momomap", link: "#" },
+  { name: "tokenomics", link: "#tokenomics" },
+  { name: "momomap", link: "#map" },
 ];
 
 export const socials=[

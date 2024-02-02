@@ -2,6 +2,7 @@ import React from "react";
 import top from "../assets/topbotton.png";
 import about from "../assets/aboutmomo.png";
 import momo from "../assets/momoo.png";
+import SectionWrapper from "../hoc/sectionwrappper";
 
 
 const Aboutmomo = () => {
@@ -32,4 +33,4 @@ const Aboutmomo = () => {
   );
 };
 
-export default Aboutmomo;
+export default SectionWrapper(Aboutmomo,"about");

@@ -8,6 +8,7 @@ import Last from "../assets/last.png";
 import sol from "../assets/solscan.png";
 import ghost from "../assets/ghost.png";
 import bottom from "../assets/bottom.png";
+import SectionWrapper from "../hoc/sectionwrappper";
 const Howtobuy = () => {
   return (
     <div className=" flex flex-col  ">
@@ -52,4 +53,4 @@ const Howtobuy = () => {
   );
 };
 
-export default Howtobuy;
+export default SectionWrapper(Howtobuy,"how");

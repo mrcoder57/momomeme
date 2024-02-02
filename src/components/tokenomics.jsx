@@ -4,6 +4,7 @@ import momo from "../assets/tokenmomo.png";
 
 
 import { tags } from "../constants";
+import SectionWrapper from "../hoc/sectionwrappper";
 
 const Tokenomics = () => {
   return (
@@ -45,4 +46,4 @@ const Tokenomics = () => {
   );
 };
 
-export default Tokenomics;
+export default SectionWrapper(Tokenomics,"tokenomics");

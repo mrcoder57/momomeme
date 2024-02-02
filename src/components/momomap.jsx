@@ -3,6 +3,7 @@ import Cards from "./mapcard";
 import map from "../assets/List.png"
 import bottom from "../assets/bottom.png";
 import top from "../assets/ybottom.png";
+import SectionWrapper from "../hoc/sectionwrappper";
 const Momomap = () => {
   return (
     <div className="h-full bg-[#FFC900] ">
@@ -45,4 +46,4 @@ const Momomap = () => {
   );
 };
 
-export default Momomap;
+export default SectionWrapper(Momomap,"map");

@@ -1,9 +1,10 @@
 import React from "react";
 import { socials } from "../constants";
 import top from "../assets/ybottom.png";
+import SectionWrapper from "../hoc/sectionwrappper";
 const Getmemo = () => {
   return (
-    <div className="flex flex-col h-full w-full bg-[#FF90E8]">
+    <div className="flex flex-col h-full w-full bg-[#FF90E8] mt-[-50px]">
       <div className=" h-full w-screen   mb-[100px]">
         <img src={top} alt="top" />
       </div>
@@ -32,4 +33,4 @@ const Getmemo = () => {
   );
 };
 
-export default Getmemo;
+export default SectionWrapper(Getmemo,"getmomo");
