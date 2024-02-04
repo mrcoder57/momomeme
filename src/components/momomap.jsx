@@ -9,6 +9,8 @@ const Momomap = () => {
     <div className="h-full bg-[#FFC900] ">
      <div className=" h-full w-full lg:mt-[-150px] mt-[-10px]">
         <img src={bottom} alt="top" />
+
+        
       </div>
       <div className=""> 
         <div className="flex flex-col">
