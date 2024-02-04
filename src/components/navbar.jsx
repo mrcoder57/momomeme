@@ -24,14 +24,16 @@ const Navbar = () => {
             <img src={menu} alt="menu" className="h-10 w-10 ml-3 flex" />
           </button>
           {isMobileMenuOpen && (
-            <ul className="absolute border shadow-md rounded-lg p-1 text-xs w-40 bg-[#FF90E8] gap-2 capitalize">
+            <ul className="absolute flex flex-col items-center w-full  justify-center z-50 border shadow-md rounded-lg p-1 text-xs  bg-[#FF90E8] gap-2 capitalize">
               {navlinks.map((navigation, index) => (
-                <li>
-                  {" "}
+                <li
+                className=" first-letter:capitalize hover:bg-gray-800 transition-all ease-in-out duration-300 hover:text-white rounded-full p-1 text-xl font-semibold"
+                >
+                
                   <a
                     key={index}
                     href={`#${navigation.link}`}
-                    className=" first-letter:capitalize hover:bg-gray-800 transition-all ease-in-out duration-300 hover:text-white rounded-full p-1 text-xl font-semibold"
+                   
 
                   >
                     {navigation.name}
