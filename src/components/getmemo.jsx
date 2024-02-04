@@ -33,4 +33,4 @@ const Getmemo = () => {
   );
 };
 
-export default SectionWrapper(Getmemo,"getmomo");
+export default Getmemo;

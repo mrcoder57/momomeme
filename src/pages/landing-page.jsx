@@ -11,25 +11,7 @@ import { BrowserRouter } from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <BrowserRouter>
-    <div className="bg-[#FF90E8] h-full overflow-x-hidden">
-      <div className="bg-[#FF90E8] h-full">
-        <Navbar />
-      </div>
-      <Hero />
-      <Aboutmomo/>
-      <Howtobuy/>
-      <Tokenomics/>
-     <div className="h-full w-full">
-        <Momomap/>
-     </div>
-     <div className="h-full w-full">
-     <Getmemo/>
-     </div>
-    
-     <Footer/>
-    </div>
-    </BrowserRouter>
+   LandingPage
   );
 };
 

@@ -1,22 +1,23 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react'
+import { motion } from 'framer-motion'
+import { staggerContainer } from '../constants'
 
-const SectionWrapper = (Component, idName) =>
-  function HOC() {
+const SectionWrapper = (Component,idName) => 
+function HOC(){
     return (
-      <motion.section
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className="relative z-0"
-      >
+    <motion.section 
+    variants={staggerContainer()}
+    initial="hidden"
+    whileInView="show"
+    viewport={{once:true,amount:0.25}}
+    className='relative z-0'
+    >
         <span className=" hash-span" id={idName}>
-          &nbsp;
+            &nbsp;
         </span>
-
+        
         <Component />
-      </motion.section>
-    );
-  };
+    </motion.section>)
+}
 
-export default SectionWrapper;
+export default SectionWrapper

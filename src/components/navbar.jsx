@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#FF90E8] fixed flex items-center justify-between mr-10 w-full">
+    <nav className="bg-[#FF90E8] flex items-center justify-between mr-10 w-full">
       <div className="flex items-center lg:ml-10 ">
         <div className="lg:hidden mt-2">
           <button
@@ -25,17 +25,17 @@ const Navbar = () => {
           </button>
           {isMobileMenuOpen && (
             <ul className="absolute border shadow-md rounded-lg p-1 text-xs w-40 bg-[#FF90E8] gap-2 capitalize">
-              {navlinks.map((link, index) => (
+              {navlinks.map((navigation, index) => (
                 <li>
                   {" "}
-                  <Link
+                  <a
                     key={index}
-                    to={`${link.link}`}
+                    href={`#${navigation.link}`}
                     className=" first-letter:capitalize hover:bg-gray-800 transition-all ease-in-out duration-300 hover:text-white rounded-full p-1 text-xl font-semibold"
 
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
               
@@ -46,19 +46,21 @@ const Navbar = () => {
 
           )}
         </div>
+        <Link to='/' className=" flex flex-row items-center">
         <img src={momo} alt="Logo" className="lg:h-20 lg:w-20 h-14 w-14" />
         <span className="lg:text-3xl text-xl font-bold ml-3 capitalize">WENWIFHAT</span>
+        </Link>
       </div>
 
       <div className="hidden md:hidden lg:flex items-center space-x-4 border border-black rounded-full p-2">
         {navlinks.map((link, index) => (
-          <Link
+          <a
             key={index}
-            to={`${link.link}`}
+            href={`#${link.link}`}
             className="first-letter:capitalize hover:bg-gray-800 hover:text-white text-sm rounded-full p-1"
           >
             {link.name}
-          </Link>
+          </a>
         ))}
       </div>
 

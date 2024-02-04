@@ -46,4 +46,4 @@ const Tokenomics = () => {
   );
 };
 
-export default SectionWrapper(Tokenomics,"tokenomics");
+export default Tokenomics;

@@ -12,7 +12,7 @@ import SectionWrapper from "../hoc/sectionwrappper";
 const Howtobuy = () => {
   return (
     <div className=" flex flex-col  ">
-      <div className=" h-full w-full mt-[-10px]   mb-[100px]">
+      <div className=" h-full w-full mt-[-32px]   mb-[100px]">
         <img src={bottom} alt="top" />
       </div>
       <div className=" flex flex-col ">
