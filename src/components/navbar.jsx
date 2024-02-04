@@ -34,7 +34,7 @@ const Navbar = () => {
                     className=" first-letter:capitalize hover:bg-gray-800 transition-all ease-in-out duration-300 hover:text-white rounded-full p-1 text-xl font-semibold"
 
                   >
-                    {link.name}
+                    {navigation.name}
                   </a>
                 </li>
               ))}
