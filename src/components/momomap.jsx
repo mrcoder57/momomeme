@@ -7,7 +7,7 @@ import SectionWrapper from "../hoc/sectionwrappper";
 const Momomap = () => {
   return (
     <div className="h-full bg-[#FFC900] ">
-     <div className=" h-full w-full lg:mt-[-150px] mt-[-10px]">
+     <div className=" h-full w-full lg:mt-[-150px] mt-[-31px]">
         <img src={bottom} alt="top" />
 
         
